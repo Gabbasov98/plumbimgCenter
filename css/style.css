@@ -1,0 +1,291 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+a,
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  line-height: 1;
+}
+
+button,
+input,
+textarea {
+  outline: none !important;
+  -webkit-transition: all .125s;
+  -o-transition: all .125s;
+  transition: all .125s;
+  font-family: inherit;
+}
+
+input[type=text]:focus,
+input[type=file]:focus,
+input[type=checkbox]:focus,
+input[type=radio]:focus,
+input:active {
+  outline: none !important;
+}
+
+::-webkit-input-placeholder {
+  color: #222;
+}
+
+::-moz-placeholder {
+  color: #222;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #222;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #222;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+svg {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+svg,
+path {
+  -webkit-transition: all .125s;
+  -o-transition: all .125s;
+  transition: all .125s;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: 0.125s;
+  -o-transition: 0.125s;
+  transition: 0.125s;
+}
+a:hover {
+  text-decoration: none !important;
+}
+a:focus {
+  text-decoration: none !important;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+i {
+  line-height: 100%;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.125s;
+  background-color: inherit;
+  font-size: 1em;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  z-index: 2;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+html {
+  width: 100%;
+}
+html.fixed-body {
+  overflow-y: hidden;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.page {
+  width: calc(100vw - (100vw - 100%));
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #282828;
+  font-size: calc(1440px * .01111111);
+}
+@media screen and (max-width: 1440px) {
+  .page {
+    font-size: calc(100vw * .01111111);
+  }
+}
+.page.fixed-body, .page.fixed-body2 {
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 6.25em;
+}
+
+a:hover {
+  color: blue;
+}
+
+@media screen and (max-width: 992px) {
+  .page {
+    font-size: calc(100vw * .0208333);
+  }
+
+  .container {
+    padding: 0 1.25em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .page {
+    font-size: calc(100vw * .04444444);
+  }
+}
+.text16 {
+  font-size: 1em;
+  line-height: 150%;
+}
+
+.develop {
+  padding: 5.5em 0;
+}
+.develop__logo {
+  width: 20em;
+}
+.develop__logo img {
+  width: 100%;
+  display: block;
+}
+.develop__content {
+  margin-top: 8em;
+  position: relative;
+}
+.develop__info {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 0.5em;
+  max-width: 33em;
+}
+.develop__title {
+  font-size: 3em;
+}
+.develop__img {
+  position: absolute;
+  right: 13em;
+  top: 1.3em;
+  width: 18.75em;
+  display: block;
+}
+.develop__items {
+  margin-top: 4.8em;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 1.5em;
+  max-width: 28em;
+}
+
+@media screen and (max-width: 992px) {
+  .develop {
+    padding: 2.5em 0 2.9em;
+  }
+  .develop__logo {
+    max-width: 100%;
+  }
+  .develop__content {
+    margin-top: 5em;
+  }
+  .develop__title {
+    font-size: 2.5em;
+    line-height: 120%;
+  }
+  .develop__img {
+    right: 0;
+    width: 15em;
+  }
+  .develop__items {
+    margin-top: 3.25em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .develop__img {
+    position: static;
+    margin: 1em auto 0;
+  }
+  .develop__items {
+    margin-top: 1.25em;
+  }
+}

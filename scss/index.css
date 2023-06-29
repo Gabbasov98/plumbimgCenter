@@ -1,0 +1,57 @@
+.text16 {
+  font-size: 1em;
+  line-height: 150%; }
+
+.develop {
+  padding: 5.5em 0; }
+  .develop__logo {
+    width: 20em; }
+    .develop__logo img {
+      width: 100%;
+      display: block; }
+  .develop__content {
+    margin-top: 8em;
+    position: relative; }
+  .develop__info {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 0.5em;
+    max-width: 33em; }
+  .develop__title {
+    font-size: 3em; }
+  .develop__img {
+    position: absolute;
+    right: 13em;
+    top: 1.3em;
+    width: 18.75em;
+    display: block; }
+  .develop__items {
+    margin-top: 4.8em;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1.5em;
+    max-width: 28em; }
+
+@media screen and (max-width: 992px) {
+  .develop {
+    padding: 2.5em 0 2.9em; }
+    .develop__logo {
+      max-width: 100%; }
+    .develop__content {
+      margin-top: 5em; }
+    .develop__title {
+      font-size: 2.5em;
+      line-height: 120%; }
+    .develop__img {
+      right: 0;
+      width: 15em; }
+    .develop__items {
+      margin-top: 3.25em; } }
+@media screen and (max-width: 576px) {
+  .develop__img {
+    position: static;
+    margin: 1em auto 0; }
+  .develop__items {
+    margin-top: 1.25em; } }
+
+/*# sourceMappingURL=index.css.map */

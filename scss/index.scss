@@ -1,0 +1,76 @@
+@import "mixins";
+.text16{
+  font-size: 1em;
+  line-height: 150%;
+}
+
+.develop{
+  padding: 5.5em 0;
+  &__logo{
+    width: 20em;
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+  &__content{
+    margin-top: 8em;
+    position: relative;
+  }
+  &__info{
+    @include grid100gap(.5em);
+    max-width: 33em;
+  }
+  &__title{
+    font-size: 3em;
+  }
+  &__img{
+    position: absolute;
+    right: 13em;
+    top: 1.3em;
+    width: 18.75em;
+    display: block;
+  }
+  &__items{
+    margin-top: 4.8em;
+    @include grid100gap(1.5em);
+    max-width: 28em;
+  }
+}
+
+
+@media screen and (max-width: 992px){
+  .develop{
+    padding: 2.5em 0 2.9em;
+    &__logo{
+      max-width: 100%;
+    }
+    &__content{
+      margin-top: 5em;
+    }
+    &__title{
+      font-size: 2.5em;
+      line-height: 120%;
+    }
+    &__img{
+      right: 0;
+      width: 15em;
+    }
+    &__items{
+      margin-top: 3.25em;
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px){
+  .develop{
+    &__img{
+      position: static;
+      margin: 1em auto 0;
+    }
+    &__items{
+      margin-top: 1.25em;
+    }
+  }
+}
